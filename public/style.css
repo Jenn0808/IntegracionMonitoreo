@@ -1,0 +1,126 @@
+/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+
+header {
+    background-color: #b2d3c2;
+    color: #985757;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em; /* Cambia el tamaño de la fuente */
+    font-weight: bold; /* Cambia el grosor de la fuente */
+    color: #728c69; /* Cambia el color del texto */
+}
+
+/* Sección de Visualización de Datos */
+.visualizacion-datos {
+    background-color: #b2d3c2;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: center;
+}
+/* Estilos del botón en la sección de visualización de datos */
+.visualizacion-datos button {
+    display: block; /* Cambia a bloque para que ocupe todo el ancho disponible */
+    margin: 20px auto; /* Centra el botón */
+    
+}
+
+button {
+    background-color: rgb(45, 106, 75);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #31972a;
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(38, 143, 255, 0.5);
+}
+
+/* Estilos del formulario de calendario */
+#formularioRiego {
+    display: none;  /* Inicialmente oculto */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100; /* Asegúrate de que esté sobre otros elementos */
+}
+
+/* Mejorar la apariencia del formulario */
+#formularioRiego input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#formularioRiego button {
+    background-color: #96fab0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#formularioRiego button:hover {
+    background-color: #218838;
+}
+/* Centrar el botón en la sección de calendario de riego */
+.calendario-riego {
+    text-align: center; /* Centra el contenido de la sección */
+    margin: 20px auto;
+    max-width: 600px; /* Opcional: limita el ancho de la sección */
+}
+.programacion {
+    display: flex; /* Alinea los elementos en fila */
+    align-items: center; /* Centra verticalmente */
+    justify-content: space-between; /* Espacio entre el texto y los botones */
+    gap: 10px; /* Espacio entre los botones */
+    margin: 10px 0; /* Espaciado entre los elementos programados */
+    padding: 10px;
+    background-color: #e9f7ef; /* Fondo suave para diferenciar cada elemento */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+.programacion button {
+    padding: 5px 10px; /* Ajusta el tamaño del botón */
+    font-size: 14px; /* Tamaño de la fuente del botón */
+    background-color: rgb(45, 106, 75); /* Mantén el color coherente */
+    color: white; /* Texto blanco */
+    border: none; /* Sin bordes */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    transition: background-color 0.3s ease; /* Efecto de transición */
+}
+
+.programacion button:hover {
+    background-color: #31972a; /* Color de fondo al pasar el ratón */
+}

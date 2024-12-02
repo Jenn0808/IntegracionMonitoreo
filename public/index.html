@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoreo de Orquídeas</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+
+</head>
+<body>
+    <header>
+        <h1>Monitoreo de Orquídeas</h1>
+    </header>
+
+     <!-- Botón para activar notificaciones -->
+     <div>
+        <button id="activar-notificaciones">Activar Notificaciones</button>
+    </div>
+
+    <main>
+        <!-- Visualización de Datos -->
+        <section class="visualizacion-datos">
+            <h2>Datos Históricos</h2>
+            <canvas id="grafico"></canvas>
+            <button onclick="realizarAccion()">Realizar Acción</button> <!-- Botón para simular datos -->
+        </section>
+
+        <!-- Calendario de Riego -->
+        <section class="calendario-riego">
+            <h2>Programar Riego</h2>
+            <button onclick="mostrarFormularioRiego()">Establecer Calendario de Riego</button> <!-- Botón para abrir formulario -->
+            
+            <!-- Ventana de Formulario para agregar programación -->
+            <div id="formularioRiego" class="formulario">
+                <h3>Establecer Riego</h3>
+                <label for="fechaHora">Fecha y Hora:</label>
+                <input type="datetime-local" id="fechaHora" name="fechaHora">
+                <button onclick="guardarRiego()">Guardar</button>
+                <button onclick="cerrarFormulario()">Cerrar</button>
+            </div>
+
+            <!-- Listado de Programaciones de Riego -->
+            <div id="listaRiegos">
+                <!-- Aquí se mostrarán las programaciones -->
+            </div>
+        </section>
+    </main>
+    
+    
+    <script src="index.js"></script>
+        
+     
+    </script>
+</body>
+</html>
